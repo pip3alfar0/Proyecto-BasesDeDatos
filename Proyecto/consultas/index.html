@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+<body>
+       <div id="content">
+    <form action="consulta1.php" method="get">
+        <fieldset>
+            <legend>Consulta 1: Obtener juegos mas comprados del ano y menos jugados</legend>
+            <div>
+                <label>Ano:</label>
+                <input type="text" name="year">
+            </div>
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <div id="content">
+    <form action="consulta2.php" method="get">
+        <fieldset>
+            <legend> Consulta 2:Horas jugadas registradas por genero y cantidad de ventas por region</legend>
+            <div>
+                <label> Seleccione genero </label>
+                <select name="genero">
+                    <option value="shooter">shooter</option>
+                    <option value="action">action</option>
+                    <option value="role-playing">role-playing</option>
+					<option value="strategy">strategy</option>
+					<option value="sports">sports</option>
+					<option value="simulation">simulation</option>
+					<option value="racing">racing</option>
+					<option value="misc">misc</option>
+					<option value="platform">platform</option>
+					<option value="fighting">fighting</option>
+					<option value="adventure">adventure</option>
+					<option value="puzzle">puzzle</option>
+                </select>
+            </div>
+
+            <!-- Button -->
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+<div id="content">
+    <form action="consulta3.php" method="get">
+        <fieldset>
+            <legend>Consulta 3: Publishers con mas horas jugadas por pais</legend>
+            <div>
+                <label> Seleccione Paises </label>
+                <select name="country">
+                    <option value="estados unidos">estados unidos</option>
+                    <option value="japan">japan</option>
+                    <option value="francia">francia</option>
+					<option value="reino unido">reino unido</option>
+					<option value="alemania">alemania</option>
+					<option value="suecia">suecia</option>
+					<option value="paases bajos">paases bajos</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <div id="content">
+    <form action="consulta4.php" method="get">
+        <fieldset>
+            <legend>Consulta 4: Obtener juegos mas comprados y menos jugados entre anos</legend>
+            <div>
+                    <label>Ano de inicio:</label>
+                    <input type="text" name="start_year">
+                </div>
+                <div>
+                    <label>Ano de fin:</label>
+                    <input type="text" name="end_year">
+                </div>
+                <div>
+                    <input type="submit" value="Consultar">
+                </div>
+            </fieldset>
+    </form>
+</div>
+	    <div id="content">
+        <form action="consulta5.php" method="get">
+            <fieldset>
+            <legend>Consulta 5: Juegos con mas horas jugadas y ventas por region</legend>
+            <div>
+                <label for="region">Region:</label>
+                <select name="region" id="region">
+                    <option value="global_sales">Ventas Globales</option>
+                    <option value="na_sales">Ventas en America del Norte</option>
+                    <option value="eu_sales">Ventas en Europa</option>
+                    <option value="jp_sales">Ventas en Japon</option>
+                    <option value="other_sales">Otras Ventas</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+        </fieldset>
+    </form>
+<div id="content">
+    <form action="consulta6.php" method="get">
+        <fieldset>
+            <legend>Consulta 6: Promedio de horas jugadas segun ano del juego </legend>
+            <div>
+                <label>Ano:</label>
+                <input type="text" name="year">
+            </div>
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
